@@ -1,0 +1,54 @@
+.header{
+    @apply bg-transparent p-12 flex flex-col  items-center md:items-start justify-center md:justify-start fixed top-0 left-0  z-20 ;
+}
+
+.navbar{
+    @apply flex;
+}
+.navbar > h1{
+    @apply font-bold text-3xl md:py-3 text-slate-50;
+}
+
+.sidelinks{
+    @apply bg-transparent fixed -right-20 top-52 -rotate-90 z-50;
+}
+
+.sidelinks > ul{
+    @apply font-sans  flex  ;
+}
+
+
+.sidelinks >ul > li{
+    @apply text-slate-50 font-semibold px-6 py-2 uppercase tracking-widest cursor-pointer;
+}
+
+
+.grid1{
+    @apply grid grid-cols-[6.5vw_1fr_1fr_1fr_1fr_6.5vw] grid-rows-[auto_auto_auto_auto_auto_auto] w-full h-screen;
+}
+
+.grid_item{
+    @apply bg-[rgba(0,0,0,0.08)];
+}
+.grid_item:nth-child(1){
+    @apply col-start-1 col-end-3;
+}
+.grid_item:nth-child(2){
+    @apply col-start-3 col-end-4 row-start-3 row-end-5;
+}
+.grid_item:nth-child(3){
+    @apply col-start-5 col-end-6 row-start-5 row-end-7;
+}
+.grid_item:nth-child(4){
+    @apply col-start-5 col-end-6 row-start-2 row-end-3;
+}
+
+.bg_wrapper{
+    @apply pl-[6.5vw] pr-[6.5vw] fixed flex justify-between top-0 left-0 z-0 w-full h-full bg-transparent;
+}
+.bg_wrapper > div{
+    @apply w-[1px] bg-white/5 h-full;
+}
+
+
+
